@@ -66,9 +66,8 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onTodoCompletionChange }) =>
                 type="checkbox" 
                 checked={todo.isComplete}
                 onChange={handleCheckboxChange}
-                style={{ marginRight: '10px' }}
               />
-              <span style={{ textDecoration: todo.isComplete ? 'line-through' : 'none' }}>
+              <span className={todo.isComplete ? 'todoTextComplete' : ''}>
                 {todo.description}
               </span>
             </div>

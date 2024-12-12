@@ -27,6 +27,14 @@
   align-items: center;
 }
 
+.todoHeader input {
+  margin-right: 10px;
+}
+
+.todoTextComplete {
+  text-decoration: line-through;
+}
+
 .todoList {
   width: 543px;
   display: flex;
